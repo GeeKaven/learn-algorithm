@@ -22,7 +22,7 @@ import java.util.Map;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
  */
-public class Solution {
+public class Lcof03 {
 
   public int findRepeatNumber(int[] nums) {
     int res = -1;
@@ -41,13 +41,13 @@ public class Solution {
   }
 
   public void test() {
-    int[] test = new int[]{2, 3, 1, 0, 2, 5, 3};
+    int[] test = {2, 3, 1, 0, 2, 5, 3};
     int res = findRepeatNumber(test);
     assert res == 2;
   }
 
   public static void main(String[] args) {
-    Solution solution = new Solution();
+    Lcof03 solution = new Lcof03();
     solution.test();
     System.out.println("All Pass");
   }
