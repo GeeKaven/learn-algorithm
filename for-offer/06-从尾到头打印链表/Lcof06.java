@@ -31,8 +31,7 @@ public class Lcof06 {
     l1.next = l2;
     l2.next = l3;
     reversePrint(l1);
-    int[] res = reversePrint(null);
-    System.out.println();
+    reversePrint(null);
   }
 
 
