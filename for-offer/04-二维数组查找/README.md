@@ -28,16 +28,10 @@
 ```
 
 # 解法1
-先来按照正常人思维找普遍规律，若二维数组中选定一个数num，  
-如果num < target，则target在num的右方，或者下方，但右下方重叠  
-如果num > target，则target在num的左方，或者上方，但左上方重叠  
-既然有重叠，则选择条件就有两个，那么思路就变成了从哪个点左为开始比较，则结果只有一种可能？  
-从边开始，从右上，左下顶点作为开始则结果就一定在左方，或者上方
-
-例如将右上设置为起始点num，num就是这一行最大值，这一列最小值  
-如果target < num，则targe在num所在列的左边，不可能在num所在的列，因为这一列num已经最小了，删除对应的列
-如果target > num，则targe在num所在行的下方，不可能在num所在的行，因为这一行num已经最大了，删除对应的行
-继续从剩余矩阵右上顶点开始，找到target为止
+1. 初始位置从右上角num开始比较, 
+2. target < num 则去除最后一列
+3. target > num 则去除第一行
+重复上述操作直到相等为止，否则未找到
 
 ``` Java
 public boolean findNumberIn2DArray(int[][] matrix, int target) {
