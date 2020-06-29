@@ -19,7 +19,7 @@ public class Lcof40 {
                 heap.poll();
             }
         }
-        
+
         int[] result = new int[heap.size()];
         int i = 0;
         for (Integer item : heap) {
