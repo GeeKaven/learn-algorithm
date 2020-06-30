@@ -14,7 +14,7 @@ public class Lcof42 {
             } else {
                 currSum += num;
             }
-            
+
             if (currSum > greatSum) {
                 greatSum = currSum;
             }
