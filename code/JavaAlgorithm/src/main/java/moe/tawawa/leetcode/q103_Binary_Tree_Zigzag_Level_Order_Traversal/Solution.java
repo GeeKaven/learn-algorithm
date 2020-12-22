@@ -50,7 +50,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        TreeNode root = Utils.buildBinaryTree(new Integer[]{3, 9, 20, null, null, 15, 7});
+        TreeNode root = Utils.createTree(new Integer[]{3, 9, 20, null, null, 15, 7});
         Solution solution = new Solution();
         Utils.printDoubleList(solution.zigzagLevelOrder(root));
     }
