@@ -44,6 +44,13 @@ public class Utils {
         System.out.println("");
     }
 
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println("");
+    }
+
     public static void printDoubleList(List<List<Integer>> lists) {
         lists.forEach(list -> {
             list.forEach(item -> {
