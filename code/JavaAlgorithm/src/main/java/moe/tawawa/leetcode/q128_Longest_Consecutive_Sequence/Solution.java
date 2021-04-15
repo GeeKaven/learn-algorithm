@@ -6,6 +6,6 @@ package moe.tawawa.leetcode.q128_Longest_Consecutive_Sequence;
  */
 public class Solution {
     public int longestConsecutive(int[] nums) {
-
+        return 0;
     }
 }
